@@ -1,0 +1,227 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: auto;
+    padding: 20px 20px;
+    margin: 0 auto;
+    min-height: auto;
+    background-color: hsl(0, 0%, 100%); 
+    border-radius: 50px;
+    border-width: 2px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: box-shadow 0.3s ease;
+}
+
+.logo {
+    margin-top: 5px;
+    width: 250px;
+    cursor: pointer;
+    margin-right: 0px;
+    transition: transform 0.2s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+.nav {
+    justify-content: space-between;
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    color: indigo;
+    font-size: 1.5rem;
+    cursor: default;
+}
+
+.nav li:hover {
+    color: black;
+}
+
+.nav li.active {
+    border-bottom: 2px solid #000000;
+    color: black;
+    transition: 0.3ms;
+}
+
+.navbar-right {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+/* Fixed cart/basket styling */
+.navbar-basket-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+.navbar-basket-icon:hover {
+    transform: scale(1.05);
+}
+
+.basket {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.navbar-dot {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #49557E;
+    border-radius: 50%;
+    min-width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.cart-count {
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1;
+    padding: 0 2px;
+}
+
+/* Animation for cart updates */
+.navbar-basket-icon:active {
+    animation: cartBounce 0.3s ease;
+}
+
+@keyframes cartBounce {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+.navbar-signin-button {
+    color: indigo;
+    font-size: 1.5rem;
+    background-color: transparent;
+    padding: 10px 40px;
+    border-radius: 50px;
+    border-width: 2px;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.navbar-signin-button:hover {
+    background-color: hsla(212, 29%, 49%, 0.389);
+    cursor: pointer;
+}
+
+.navbar.scrolled {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-spacer {
+    height: 80px; 
+}
+
+/* Auth section styles */
+.auth-section {
+    position: relative;
+}
+
+.user-menu {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.user-icon {
+    width: 40px;
+    height: 40px;
+    transition: all 0.2s ease;
+    object-fit: contain;
+    cursor: pointer;
+    display: block;
+}
+
+.user-icon:hover {
+    opacity: 0.7;
+    transform: scale(1.05);
+}
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    min-width: 180px;
+    z-index: 1000;
+    margin-top: 8px;
+    overflow: hidden;
+}
+
+.user-info {
+    padding: 12px 16px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+}
+
+.logout-btn {
+    width: 100%;
+    padding: 12px 16px;
+    background: none;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    color: #5c5858;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+}
+
+.logout-btn:hover {
+    background: #f5f5f5;
+    color: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .user-icon {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .dropdown {
+        min-width: 150px;
+    }
+    
+    .navbar-dot {
+        top: -6px;
+        right: -6px;
+        min-width: 16px;
+        height: 16px;
+    }
+    
+    .cart-count {
+        font-size: 10px;
+    }
+    
+    .basket {
+        width: 20px;
+        height: 20px;
+    }
+}
