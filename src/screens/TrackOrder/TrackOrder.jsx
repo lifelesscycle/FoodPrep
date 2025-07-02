@@ -60,7 +60,7 @@ const TrackOrder = () => {
   const fetchAllOrders = async (userEmail) => {
   setLoadingAllOrders(true);
   try {
-    const response = await fetch(`https://foodprepbackend-crj8.onrender.com/api/orders/user?userEmail=${encodeURIComponent(userEmail)}`, {
+    const response = await fetch(`https://foodprep-1w7j.onrender.com/api/orders/user?userEmail=${encodeURIComponent(userEmail)}`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -86,7 +86,7 @@ const TrackOrder = () => {
     setError('');
     
     try {
-      const response = await fetch(`https://foodprepbackend-crj8.onrender.com/api/orders/track/${orderIdToFetch}`, {
+      const response = await fetch(`https://foodprep-1w7j.onrender.com/api/orders/track/${orderIdToFetch}`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
