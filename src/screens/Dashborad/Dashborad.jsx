@@ -19,7 +19,7 @@ import {
 } from 'lucide-react';
 import './Dashboard.css'
 
-const API_BASE_URL = 'https://foodprepbackend-crj8.onrender.com';
+const API_BASE_URL = 'https://foodprep-1w7j.onrender.com';
 
 const Modal = ({ isOpen, onClose, title, children }) => {
   if (!isOpen) return null;
@@ -290,7 +290,7 @@ const SettingsManagement = () => {
     setMessage("");
 
     try {
-      const response = await fetch("https://foodprepbackend-crj8.onrender.com/api/auth/register", {
+      const response = await fetch("https://foodprep-1w7j.onrender.com/api/auth/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
