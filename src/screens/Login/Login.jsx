@@ -25,7 +25,7 @@ const Login = ({ isOpen, onClose, onLogin }) => {
     setError('');
 
     try {
-      const response = await fetch('https://foodprepbackend-crj8.onrender.com/api/auth/login', {
+      const response = await fetch('https://foodprep-1w7j.onrender.com/api/auth/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
