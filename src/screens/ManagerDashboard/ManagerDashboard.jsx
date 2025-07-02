@@ -13,7 +13,7 @@ const ManagerDashboard = () => {
   const [selectedOrder, setSelectedOrder] = useState(null);
   const [showOrderModal, setShowOrderModal] = useState(false);
 
-  const API_BASE = 'https://foodprepbackend-crj8.onrender.com'; 
+  const API_BASE = 'https://foodprep-1w7j.onrender.com'; 
 
   const orderStatuses = [
     { value: 'confirmed', label: 'Confirmed', icon: Clock, color: '#3B82F6' },
