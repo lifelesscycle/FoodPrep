@@ -128,7 +128,7 @@ const AddItem = () => {
       formDataToSend.append('category', formData.category);
       formDataToSend.append('image', formData.image);
 
-      const response = await fetch('https://foodprepbackend-crj8.onrender.com/api/food/add', {
+      const response = await fetch('https://foodprep-1w7j.onrender.com/api/food/add', {
         method: 'POST',
         body: formDataToSend
       });
