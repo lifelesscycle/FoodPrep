@@ -1,0 +1,256 @@
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-out;
+}
+
+.Blur-Background {
+  position: relative;
+  max-width: 400px;
+  width: 90%;
+  animation: slideUp 0.3s ease-out;
+}
+
+.Main-form-container {
+  background: white;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  position: relative;
+  border: 1px solid rgba(2, 2, 2, 0.934);
+}
+
+.Close-button {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #666;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+
+.Close-Button:hover {
+  background: #f5f5f5;
+  color: #333;
+}
+
+.Wel {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 8px 0;
+  text-align: center;
+}
+
+.SignIN {
+  color: #666;
+  text-align: center;
+  margin: 0 0 32px 0;
+  font-size: 14px;
+}
+
+.Form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.Form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #141313;
+  margin:auto 0;
+}
+
+.Input-label {
+  padding: 12px 16px;
+  border: 2px solid #e1e1e1;
+  border-radius: 25px;
+  font-size: 16px;
+  text-decoration: 1px 1px 3px rgba(0, 0, 0, 0.375);
+  transition: all 0.2s ease;
+  background: white;
+}
+
+.Input-label:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.Input-label::placeholder {
+  color: #999;
+}
+
+.ErrorMessage {
+  color: #dc3545;
+  font-size: 14px;
+  padding: 8px 12px;
+  background: #fff5f5;
+  border: 1px solid #fecaca;
+  border-radius: 6px;
+  margin: -8px 0 8px 0;
+}
+
+.bt {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: 2px;
+  padding: 14px 24px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 8px;
+}
+
+.bt:hover:not(:disabled) {
+  background: #42215796;
+  transform: translateY(-1px);
+}
+
+.bt:active {
+  transform: translateY(0);
+}
+
+.bt:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.load {
+  position: relative;
+}
+
+.NewUser {
+  text-align: center;
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.Newuser {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.Newuser:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.ft {
+  text-align: center;
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.fk {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.fk:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (max-width: 480px) {
+  .m {
+    padding: 24px;
+    margin: 16px;
+  }
+  
+  .t {
+    font-size: 24px;
+  }
+  
+  .i {
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+}
+
+.register-wrapper {
+  width: 100%;
+  max-width: 450px;
+  position: relative;
+}
+
+.back-to-login-btn {
+  background: transparent;
+  border: none;
+  color: #667eea;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 8px 0;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: color 0.3s ease;
+}
+
+.back-to-login-btn:hover {
+  color: #764ba2;
+}
+
+.back-to-login-btn:focus {
+  outline: 2px solid #667eea;
+  outline-offset: 2px;
+  border-radius: 4px;
+}

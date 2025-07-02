@@ -1,0 +1,45 @@
+[
+  {
+    "orderId": "ORD1751347179996",
+    "userId": "testuser",
+    "userName": "Testuser",
+    "userEmail": "test@example.com",
+    "items": [
+      {
+        "id": "1",
+        "name": "Greek salad",
+        "price": 120,
+        "quantity": 3,
+        "category": "Salad",
+        "image": "/src/assets/assets/food_1.png"
+      }
+    ],
+    "address": {
+      "street": "NA",
+      "city": "Bhopal Madhya Pradesh",
+      "state": "MADHYA PRADESH",
+      "zipCode": "462023",
+      "country": "India"
+    },
+    "subtotal": 360,
+    "discount": 0,
+    "total": 360,
+    "appliedCoupon": null,
+    "paymentMethod": "cod",
+    "orderDate": "2025-07-01T05:19:39.997Z",
+    "status": "out_for_delivery",
+    "statusHistory": [
+      {
+        "status": "confirmed",
+        "timestamp": "2025-07-01T05:19:40.010Z",
+        "description": "Order placed and confirmed"
+      },
+      {
+        "status": "out_for_delivery",
+        "timestamp": "2025-07-01T05:23:58.026Z",
+        "description": "Order is out for delivery"
+      }
+    ],
+    "lastUpdated": "2025-07-01T05:23:58.026Z"
+  }
+]

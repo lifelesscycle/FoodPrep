@@ -1,0 +1,60 @@
+.header{
+    display:flex;
+    padding: 20px 20px;
+    background-image: url(./../assets/assets/header_img.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    align-items: center;
+    background-position: center;
+    border-radius: 90px;
+    border-width: 2px;
+    margin: 0 auto;
+    margin-top: 40px;
+    height: 600px;
+}
+
+.header .Header-Content{
+    margin-left: 15px;
+    margin-top: 5%;
+    background-color: transparent;
+    margin-bottom: 40px;
+    animation: fadeIn 3s;
+}
+
+.Header-Content  h1{
+    font-size: 4rem;
+    color: rgb(33, 16, 67);
+    text-shadow: 4px 4px 8px whitesmoke; 
+    font-weight: bold;
+    width:60%;
+    line-height:0.9;
+    padding-top: 0%;
+}
+
+.Header-Content h2{
+    padding-top: 3%;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgb(33, 16, 67);
+    text-shadow: 1px 1px 2px whitesmoke; 
+    line-height: 1;
+    width:50%;
+}
+
+.View-More{
+    margin-top: 40px;
+    font-size: 1rem;
+    font-weight: 500;
+    padding:10px 40px;
+    border-radius:10px;
+    color: rgb(33, 16, 67);
+    height: 55px;
+    text-shadow: 1px 1px 16px black; 
+    border-width:1.5px;
+    cursor:pointer;
+    transition: 0.3s;
+}
+
+.View-More:hover{
+    background-color: gainsboro;
+}

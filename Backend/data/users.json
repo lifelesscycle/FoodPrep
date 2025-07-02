@@ -1,0 +1,20 @@
+[
+  {
+    "userid": "admin",
+    "email": "admin@prep.com",
+    "password": "$2b$12$OsJRfvgdJZ8lV3EBcHAsbO/exoPe7MHE7FdZKh/qeoMHlqeiQ1CNm",
+    "role": "owner"
+  },
+  {
+    "userid": "manager",
+    "email": "manager@prep.com",
+    "password": "$2b$12$cnO8eoMg/OYfU4eoEW6HsOCUJi/K7iU02bgB/MaGKilZsppS.SMg6",
+    "role": "manager"
+  },
+  {
+    "userid": "testuser",
+    "email": "test@example.com",
+    "password": "$2b$12$ms/q0uaKVktLWccGYQnAzuvvZjdtRB3UB2oIcV1yzH4Y0Ux0ZmPQi",
+    "role": "user"
+  }
+]
