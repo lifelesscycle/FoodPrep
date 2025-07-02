@@ -9,7 +9,7 @@ import {
   XCircle
 } from 'lucide-react';
 
-const API_BASE_URL = 'https://foodprepbackend-crj8.onrender.com';
+const API_BASE_URL = 'https://foodprep-1w7j.onrender.com';
 
 const AnalyticsOverview = () => {
   const [analytics, setAnalytics] = useState(null);
