@@ -96,7 +96,7 @@ const PlaceOrder = ({ cart, setCart }) => {
     try {
       console.log('Sending order data:', JSON.stringify(orderData, null, 2));
       
-      const response = await fetch('https://foodprepbackend-crj8.onrender.com/api/orders/place', {
+      const response = await fetch('https://foodprep-1w7j.onrender.com/api/orders/place', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
