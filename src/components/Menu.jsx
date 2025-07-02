@@ -18,7 +18,7 @@ const Menu = ({ cart = [], setCart }) => {
         setLoading(true);
         setError(null);
         
-        const response = await fetch('https://foodprepbackend-crj8.onrender.com/api/food/');
+        const response = await fetch('https://foodprep-1w7j.onrender.com/api/food/');
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
