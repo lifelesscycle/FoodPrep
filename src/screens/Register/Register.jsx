@@ -70,7 +70,7 @@ const Register = ({ onRegisterSuccess, isModal = false }) => {
     setErrors({});
 
     try {
-      const response = await fetch('https://foodprepbackend-crj8.onrender.com/api/auth/register', {
+      const response = await fetch('https://foodprep-1w7j.onrender.com/api/auth/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
